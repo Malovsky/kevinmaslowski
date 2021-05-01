@@ -1,0 +1,124 @@
+body {
+  background-color: #ffc13b;
+  font-family: "SF Pro";
+/*  margin: 0;
+  padding: 0;
+*/
+}
+
+h1 {
+  color: rgb(238, 52, 74);
+}
+
+.value-one a {
+  text-decoration: none;
+  color: rgb(58, 216, 91);;
+}
+
+.value-two a {
+  text-decoration: none;
+  color: rgb(42, 216, 231);
+}
+
+.value-three a {
+  text-decoration: none;
+  color: #ff6e40;
+}
+
+.surligne {
+  background-color: #ff6e40;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.wrapper div {
+  flex: 1 1 0;
+}
+/*--------------- ME ---------------*/
+.wrapper #me {
+  background-color: #f5f0e1;
+  text-align: center;
+  border-top: solid 1em white;
+  border-left: solid 1em white;
+  border-bottom: solid 1em white;
+}
+
+#photoprofil {
+  margin-top: 2em;
+  width: 30%;
+  height: auto;
+}
+
+#presentation {
+  margin: 1rem 3rem;
+  color: #1e3d59;
+  font-weight: 600;
+  text-align: justify;
+  line-height: 2em;
+}
+
+#presentation a {
+  text-decoration: none;
+  color: black;
+}
+
+/*--------------- MY SKILLS ---------------*/
+.wrapper #skills {
+  font-family: "Fira Code";
+  font-size: 90%;
+  background-color: #1e3d59;
+  border-top: solid 1em #0f2a3e;
+  border-right: solid 1em #0f2a3e;
+  border-bottom: solid 1em #0f2a3e;
+  overflow: scroll;
+}
+
+.code-line {
+  counter-increment: lines;
+  display: block;
+  padding-top: 0.4em;
+  padding-left: 1em;
+
+}
+
+.code-line::before {
+  text-align: right;
+  min-width: 1em;
+  display: inline-block;
+  content: " "counter(lines);
+  color: #305889;
+  margin-right: 0.5em;
+}
+
+.code-line::after {
+  content: "¬";
+  color: #305889;
+}
+
+.normaly-invisible {
+  color: #305889;
+}
+
+.ponctuation {
+  color: #6499e7;
+}
+
+.var-name {
+  color: rgb(238, 52, 74);
+}
+
+.value-one {
+  color: rgb(58, 216, 91);
+}
+
+.value-two {
+  color: rgb(42, 216, 231);
+}
+
+.value-three {
+  color: #ff6e40;
+}
