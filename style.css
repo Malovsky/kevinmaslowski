@@ -1,23 +1,22 @@
+/*--------------- BODY ---------------*/
 body {
   background-color: #ffc13b;
   font-family: "SF Pro";
-/*  margin: 0;
-  padding: 0;
-*/
 }
 
 h1 {
-  color: rgb(238, 52, 74);
+  color: #ee344a;
+  margin: 1em;
 }
 
 .value-one a {
   text-decoration: none;
-  color: rgb(58, 216, 91);;
+  color: #3ad85b
 }
 
 .value-two a {
   text-decoration: none;
-  color: rgb(42, 216, 231);
+  color: #2ad8e7
 }
 
 .value-three a {
@@ -26,18 +25,19 @@ h1 {
 }
 
 .surligne {
-  background-color: #ff6e40;
+  font-weight: bolder;
+  color: #ff6e40;
 }
 
 .wrapper {
-  height: 100vh;
   display: flex;
   flex-wrap: nowrap;
 }
 
 .wrapper div {
-  flex: 1 1 0;
+  flex: 50%;
 }
+
 /*--------------- ME ---------------*/
 .wrapper #me {
   background-color: #f5f0e1;
@@ -55,6 +55,7 @@ h1 {
 
 #presentation {
   margin: 1rem 3rem;
+  font-size: 90%;
   color: #1e3d59;
   font-weight: 600;
   text-align: justify;
@@ -108,17 +109,72 @@ h1 {
 }
 
 .var-name {
-  color: rgb(238, 52, 74);
+  color: #ee344a
 }
 
 .value-one {
-  color: rgb(58, 216, 91);
+  color: #3ad85b
 }
 
 .value-two {
-  color: rgb(42, 216, 231);
+  color: #2ad8e7
 }
 
 .value-three {
   color: #ff6e40;
+}
+
+/*--------------- RESPONSIVE ---------------*/
+
+/* For desktop: */
+@media screen and (max-width: 64em) {
+  .wrapper {
+    flex-direction: row;
+  }
+}
+
+/* For tablets: */
+@media screen and (max-width: 50em) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .wrapper #me {
+    border-top: solid 1em white;
+    border-left: solid 1em white;
+    border-right: solid 1em white;
+    border-bottom: none;
+  }
+  .wrapper #skills {
+    border-left: solid 1em #0f2a3e;
+    border-right: solid 1em #0f2a3e;
+    border-bottom: solid 1em #0f2a3e;
+    border-top: none;
+  }
+
+  .code-like {
+    margin-top: 1em;
+  }
+}
+
+/* For phones: */
+@media screen and (max-width: 30em){
+  .wrapper {
+    flex-direction: column;
+  }
+  .wrapper #me {
+    border-top: solid 1em white;
+    border-left: solid 1em white;
+    border-right: solid 1em white;
+    border-bottom: none;
+  }
+  .wrapper #skills {
+    border-left: solid 1em #0f2a3e;
+    border-right: solid 1em #0f2a3e;
+    border-bottom: solid 1em #0f2a3e;
+    border-top: none;
+  }
+  .code-like {
+    margin-top: 1em;
+  }
+
 }
