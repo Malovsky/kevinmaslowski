@@ -2,11 +2,11 @@
 body {
   background-color: #ffc13b;
   font-family: 'Open Sans', sans-serif;
+  height:100%
 }
 
 h1 {
   color: #ee344a;
-  margin: 1em;
 }
 
 .value-one a {
@@ -30,8 +30,10 @@ h1 {
 }
 
 .wrapper {
+  height: 100vh;
   display: flex;
   flex-wrap: nowrap;
+  position: relative;
 }
 
 .wrapper div {
@@ -45,11 +47,12 @@ h1 {
   border-top: solid 1em white;
   border-left: solid 1em white;
   border-bottom: solid 1em white;
+  overflow: scroll;
 }
 
 #photoprofil {
-  margin-top: 2em;
-  width: 30%;
+  margin-top: 1em;
+  width: 25%;
   height: auto;
 }
 
@@ -57,9 +60,9 @@ h1 {
   margin: 1em 1em;
   font-size: 100%;
   color: #1e3d59;
-  font-weight: 600;
+  font-weight: 400;
   text-align: justify;
-  line-height: 2em;
+  line-height: 1.5em;
 }
 
 #presentation a {
@@ -137,6 +140,7 @@ h1 {
 @media screen and (max-width: 50em) {
   .wrapper {
     flex-direction: column;
+    height: 100%;
   }
   .wrapper #me {
     border-top: solid 1em white;
@@ -159,9 +163,13 @@ h1 {
 /* For phones: */
 @media screen and (max-width: 30em){
 
+  h1 {
+    font-size: 20px;
+  }
 
   .wrapper {
     flex-direction: column;
+    height: 100%;
     font-size:70%;
   }
   .wrapper #me {
@@ -169,6 +177,7 @@ h1 {
     border-left: solid 1em white;
     border-right: solid 1em white;
     border-bottom: none;
+    font-size:70%;
   }
   .wrapper #skills {
     border-left: solid 1em #0f2a3e;
@@ -184,25 +193,25 @@ h1 {
 
 /*--------------- RESPONSIVE FONTS ---------------*/
 @media screen and (max-width: 1326px){
-  .wrapper #skills {
+  .wrapper #skills, .wrapper #me {
     font-size: 90%;
   }
 }
 
 @media screen and (max-width: 1196px){
-  .wrapper #skills {
+  .wrapper #skills, .wrapper #me {
     font-size: 80%;
   }
 }
 
 @media screen and (max-width: 1067px){
-  .wrapper #skills {
+  .wrapper #skills, .wrapper #me {
     font-size: 70%;
   }
 }
 
 @media screen and (max-width: 938px){
-  .wrapper #skills {
+  .wrapper #skills, .wrapper #me {
     font-size: 60%;
   }
 
@@ -212,37 +221,46 @@ h1 {
 }
 
 @media screen and (max-width: 809px){
-  .wrapper #skills {
+  .wrapper #skills, .wrapper #me {
     font-size: 50%;
   }
 }
 
 @media screen and (max-width: 800px){
-  .wrapper #skills {
+  .wrapper #skills, .wrapper #me {
     font-size: 100%;
   }
 }
 
 @media screen and (max-width: 687px){
-  .wrapper #skills {
+  .wrapper #skills, .wrapper #me {
     font-size: 90%;
   }
 }
 
 @media screen and (max-width: 620px){
-  .wrapper #skills {
+  .wrapper #skills, .wrapper #me {
     font-size: 80%;
   }
 }
 
 @media screen and (max-width: 553px){
-  .wrapper #skills {
+  .wrapper #skills, .wrapper #me {
     font-size: 70%;
   }
 }
 
 @media screen and (max-width: 488px){
-  .wrapper #skills {
+  .wrapper #skills, .wrapper #me {
     font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .wrapper #skills, .wrapper #me {
+    font-size: 50%;
+  }
+  h1 {
+    font-size: 20px;
   }
 }
