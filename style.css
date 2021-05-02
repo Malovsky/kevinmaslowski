@@ -240,3 +240,9 @@ h1 {
     font-size: 70%;
   }
 }
+
+@media screen and (max-width: 488px){
+  .wrapper #skills {
+    font-size: 60%;
+  }
+}
