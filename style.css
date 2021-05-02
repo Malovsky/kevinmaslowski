@@ -1,7 +1,7 @@
 /*--------------- BODY ---------------*/
 body {
   background-color: #ffc13b;
-  font-family: "SF Pro";
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -25,7 +25,7 @@ h1 {
 }
 
 .surligne {
-  font-weight: bolder;
+  font-weight: bold;
   color: #ff6e40;
 }
 
@@ -55,7 +55,7 @@ h1 {
 
 #presentation {
   margin: 1rem 3rem;
-  font-size: 90%;
+  font-size: 100%;
   color: #1e3d59;
   font-weight: 600;
   text-align: justify;
@@ -70,7 +70,7 @@ h1 {
 /*--------------- MY SKILLS ---------------*/
 .wrapper #skills {
   font-family: "Fira Code";
-  font-size: 90%;
+  font-size: 100%;
   background-color: #1e3d59;
   border-top: solid 1em #0f2a3e;
   border-right: solid 1em #0f2a3e;
@@ -158,8 +158,11 @@ h1 {
 
 /* For phones: */
 @media screen and (max-width: 30em){
+
+
   .wrapper {
     flex-direction: column;
+    font-size:70%;
   }
   .wrapper #me {
     border-top: solid 1em white;
@@ -177,4 +180,63 @@ h1 {
     margin-top: 1em;
   }
 
+}
+
+/*--------------- RESPONSIVE FONTS ---------------*/
+@media screen and (max-width: 1326px){
+  .wrapper #skills {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 1196px){
+  .wrapper #skills {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 1067px){
+  .wrapper #skills {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 938px){
+  .wrapper #skills {
+    font-size: 60%;
+  }
+
+  h1 {
+    font-size: x-large;
+  }
+}
+
+@media screen and (max-width: 809px){
+  .wrapper #skills {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .wrapper #skills {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 687px){
+  .wrapper #skills {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 620px){
+  .wrapper #skills {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 553px){
+  .wrapper #skills {
+    font-size: 70%;
+  }
 }
